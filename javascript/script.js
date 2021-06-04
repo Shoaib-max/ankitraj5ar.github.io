@@ -60,7 +60,8 @@ loadMore.addEventListener('click', function(event){
         return response.json();
     })
     .then(function(data){
-        bg.style.backgroundImage = Img.src;
+        var url = Img.src;
+        bg.style.backgroundImage = `url(${url})`; 
         Img.src = data.message;
     })
     Img.addEventListener("load", function(){

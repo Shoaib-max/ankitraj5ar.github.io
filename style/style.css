@@ -104,3 +104,24 @@ body{
   .show{
       display: block !important;
   }
+
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    .main-head{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 0 14px;
+    }
+    .head-container{
+        padding-bottom: 30px;
+       
+    }
+    .last{
+        display: block;
+        margin:15px 0 10px 0;
+        text-align: center;
+    }
+    .download{
+        margin-bottom: 15px;
+    }
+}
